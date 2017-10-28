@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista e YT</title>
+</head>
+<body>
+
+	<div class="videos_de_youtube" ></div>
+
+	<div class="lista_de_youtube_2" ></div>
+
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.js"
+		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript" src="plugin.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('.videos_de_youtube').youtube(
+				["lzas_TSV7II", "9WQHGQR69JI"]
+			);
+
+			$('.lista_de_youtube_2').youtube(
+				[
+					"RAsptMlojm0", 
+					"ThPmy4hM578", 
+					"gXbohiAaprc"
+				],
+				200,
+				160
+			);
+		});
+	</script>
+
+</body>
+</html>
