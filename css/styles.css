@@ -53,6 +53,7 @@ blockquote, q {
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
+    line-height: 1.5;
     color: #666666;
 }
 h1, h2, h3, h4, h5, h6 { 
@@ -77,7 +78,7 @@ h4 {
 }
 h5 {
     font-size: 1.1rem ; 
-    margin: 0.5 0 1rem 0 ;
+    margin: 0.5rem 0 1rem 0 ;
 }
 h6 {
     font-size: 1rem ; 
@@ -159,4 +160,9 @@ iframe {
 }
 #main-video iframe {
     height: 400px;
+}
+
+.videoTitle {
+    font-size: 1.1rem;
+    font-weight: normal;
 }
