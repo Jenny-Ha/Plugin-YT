@@ -1,0 +1,162 @@
+/*========================================
+        YOUTUBE PLAYLIST STYLES
+========================================*/
+/* RESET */
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+/* === GENERAL === */
+*,:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #666666;
+}
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: bold;
+    color: #333333;
+}
+h1 {
+    font-size: 1.75rem; 
+    margin: 1rem 0 1.2rem 0;
+}
+h2 {
+    font-size: 1.5rem; 
+    margin: 1rem 0 1.1rem 0;
+}
+h3 {
+    font-size: 1.3rem; 
+    margin: 1rem 0 1rem 0;
+}
+h4 {
+    font-size: 1.2rem ; 
+    margin: 0.7rem 0 1rem 0;
+}
+h5 {
+    font-size: 1.1rem ; 
+    margin: 0.5 0 1rem 0 ;
+}
+h6 {
+    font-size: 1rem ; 
+    margin: 0.5rem 0 1rem 0 ;
+}
+
+a { text-decoration: none }
+
+/*===  UTILITIES === */
+
+/* Clearfix*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+/* Text */
+.text-center{text-align: center}
+
+/* Grid*/
+.container {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+[class^="col-"] {
+    float: left;    
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-1 { width: 10% }
+.col-2 { width: 20% }
+.col-3 { width: 30% }
+.col-4 { width: 40% }
+.col-5 { width: 50% }
+.col-6 { width: 60% }
+.col-7 { width: 70% }
+.col-8 { width: 80% }
+.col-9 { width: 90% }
+.col-10 { width: 100% }
+
+/*=== PAGE ===*/
+.container {
+    width: 100%;
+    max-width: 1400;
+    overflow: hidden;
+}
+iframe {
+    margin-bottom: 1rem ;
+}
+#main-video iframe {
+    height: 400px;
+}

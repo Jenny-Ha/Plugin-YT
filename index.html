@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Lista e YT</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Youtube Playlist</title>
+	<!-- Custom CSS-->	
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<div class="container" >
+		<h1 class="text-center">Youtube Playlist</h1>
+		<div class="row">
+			<div id="main-video" class="col-7">
 
-	<div class="videos_de_youtube" ></div>
-
-	<div class="lista_de_youtube_2" ></div>
-
-	<script
-		src="https://code.jquery.com/jquery-2.2.4.js"
-		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-		crossorigin="anonymous"></script>
-
-
-	<script type="text/javascript" src="plugin.js"></script>
+			</div>
+			<div id="list-video"class="col-3">
+			</div>
+			
+		</div
+	</div>
+		
+	<!-- Jquery-->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>		
+	<!-- Plugin -->			
+	<script type="text/javascript" src="js/youtube.plugin.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function()
 		{
-			$('.videos_de_youtube').youtube(
-				["lzas_TSV7II", "9WQHGQR69JI"]
-			);
+			/* Videos principales */
+			
+			var main_Videos = [{ url:"Tmf5nSRrr7k", title: "Steven Universe episodio 52 Escape de la Prisión Español Latino" }];
+			$('#main-video').youtube(main_Videos);
 
-			$('.lista_de_youtube_2').youtube(
-				[
-					"RAsptMlojm0", 
-					"ThPmy4hM578", 
-					"gXbohiAaprc"
-				],
-				200,
-				160
-			);
+			/* Lista de reproduccion */
+			var videos_List = [	{ url:"Y4KTYJLlJ0Y", title: "Steven Universe | Bismuto | Episodio 100 (Español Latino) HD" },
+								{ url:"HXs1_KV9FH4", title: "Steven Universe (Clip) - Malaquita contra Alejandrita [Español de España HD]" },
+								{ url:"dFg_h49ilM8", title: "Bitácora #4 | Aventuras en Ciudad Playa | Cartoon Network" } ];
+
+			$('#list-video').youtube(videos_List);
 		});
 	</script>
-
+			
+	
 </body>
 </html>
+
+
+
